@@ -9,6 +9,10 @@ git clone git@github.com:todd-demone/dotfiles-2025.git
 ```
 
 - Move to the root folder of the repo
+```
+cd dotfiles-2025
+```
+
 - Make the bash script executable: 
 
 ```bash
