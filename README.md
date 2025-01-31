@@ -3,6 +3,11 @@
 ## Installation
 
 - Clone the repo
+
+```bash
+git clone git@github.com:todd-demone/dotfiles-2025.git
+```
+
 - Move to the root folder of the repo
 - Make the bash script executable: 
 
