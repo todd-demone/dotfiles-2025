@@ -14,6 +14,7 @@ cd dotfiles-2025
 ```
 
 - Make the bash script executable: 
+[NOTE: do i need to first remove the existing ~/.bashrc before running this script?]
 
 ```bash
 chmod +x create-symlinks.sh
