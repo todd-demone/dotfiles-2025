@@ -11,6 +11,14 @@ dotfiles=("vimrc" "bashrc" "gitconfig")
 DOTFILES_DIR="$1"
 
 for dotfile in "${dotfiles[@]}"; do
+    # check if the dotfile already exists
+    if [ -e ~/".$dotfile" ]; then
+        # backup the existing dotfile
+        backup_file=~/".$dotfile.bak_$(date +"%Y-%m-%d-%H-%M-%S")"
+        mv ~/".$dotfile" "$backup_file"
+        echo "backup of existing $dotfile created at $backup_file"
+    fi
+
     ln -s "$DOTFILES_DIR/$dotfile" ~/.$dotfile
     echo "Symbolic link created for $dotfile"
 done
